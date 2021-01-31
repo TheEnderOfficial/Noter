@@ -7,9 +7,9 @@
     <body>
         <header>
             <nav class="navbar">
-                <a href="#" class="heading">Noter</a>
-                <a href="#" class="nav-link"><img class="header-image" src="img/account.png"></a>
-                <a href="#" class="nav-link">Заметки</a>
+                <a href="/" class="heading">Noter</a>
+                <a href="accountManagment.php" class="nav-link"><img class="header-image" src="img/account.png"></a>
+                <a href="/" class="nav-link">Заметки</a>
             </nav>
         </header>
         
@@ -17,15 +17,24 @@
             <div align="center">
                 <span class="heading">Ваши заметки</span>
             </div>
-            <div class="note container">
-                <span class="note-header">
-                    asf
-                </span>
-                <br>
-                <span class="note-description">
-                    asf
-                </span>
-            </div>
+            <?php
+                $link = mysqli_connect("localhost", "root", "toor", "noter");
+                $query = mysqli_query($link, 'SELECT id FROM users WHERE token = \'' . $_COOKIE['user'] . '\'');
+                $id = mysqli_fetch_assoc($query)['id'];
+                mysqli_free_result($query);
+                $query = mysqli_query($link, 'SELECT * FROM notes WHERE userID = \'' . $id . '\'');
+                
+                while ($row = mysqli_fetch_assoc($query)){
+                    echo '<div class="note container">
+                        <span class="note-header">
+                            ' . $row['title'] . '
+                        </span>
+                        <br>
+                        <span class="note-description">
+                            ' . $row['text'] . '
+                        </span></div>';
+                }
+                ?>
         </div>
         <footer class="footer">
             <nobr>
