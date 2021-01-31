@@ -9,6 +9,7 @@
             <nav class="navbar">
                 <a href="/" class="heading">Noter</a>
                 <a href="accountManagment.php" class="nav-link"><img class="header-image" src="img/account.png"></a>
+                <a href="/addNote.php" class="nav-link">Создать заметку</a>
                 <a href="/" class="nav-link">Заметки</a>
             </nav>
         </header>

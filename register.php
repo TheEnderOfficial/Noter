@@ -18,6 +18,7 @@
         <nav class="navbar">
                 <a href="/" class="heading">Noter</a>
                 <a href="accountManagment.php" class="nav-link"><img class="header-image" src="img/account.png"></a>
+                <a href="/addNote.php" class="nav-link">Создать заметку</a>
                 <a href="/" class="nav-link">Заметки</a>
             </nav>
         </header>
@@ -32,6 +33,7 @@
             <input type="password" class="form__input" name="password" id="password" placeholder="Пароль" required="" />
             <label for="password" class="form__label">Пароль</label>
             <button type="sumbit" class="custom-button-1">Регистрация</button>
+            <a href="login.php">Есть аккаунт? Войти!</a>
             </form>
         </div>
         <footer class="footer">
