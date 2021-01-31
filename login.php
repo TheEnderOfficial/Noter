@@ -24,14 +24,14 @@
         
         <div align="center" class="content">
             <div align="center">
-                <span class="heading">Регистрация</span>
+                <span class="heading">Вход</span>
             </div>
-            <form class="container form-register" action="regHandler.php" method="get">
+            <form class="container form-register" action="logHandler.php" method="get">
             <input type="text" class="form__input" name="login" id="login" placeholder="Логин" required="" />
             <label for="login" class="form__label">Логин</label> 
             <input type="password" class="form__input" name="password" id="password" placeholder="Пароль" required="" />
             <label for="password" class="form__label">Пароль</label>
-            <button type="sumbit" class="custom-button-1">Регистрация</button>
+            <button type="sumbit" class="custom-button-1">Войти</button>
             </form>
         </div>
         <footer class="footer">

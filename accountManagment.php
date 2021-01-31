@@ -7,9 +7,9 @@
     <body>
         <header>
             <nav class="navbar">
-                <a href="#" class="heading">Noter</a>
-                <a href="#" class="nav-link"><img class="header-image" src="img/account.png"></a>
-                <a href="#" class="nav-link">Заметки</a>
+                <a href="/" class="heading">Noter</a>
+                <a href="accountManagment.php" class="nav-link"><img class="header-image" src="img/account.png"></a>
+                <a href="/" class="nav-link">Заметки</a>
             </nav>
         </header>
         
@@ -18,8 +18,19 @@
                 <span class="heading">Управление аккаунтом</span>
             </div>
             <?php 
+                $link = mysqli_connect("localhost", "root", "toor", "noter");
+                
                 if ($_COOKIE['user'] == null){
                     header('Location: http://'.$_SERVER['HTTP_HOST'].'/register.php');
+                }
+                else{
+                    $query = mysqli_query($link, 'SELECT * FROM users WHERE token = \'' . $_COOKIE['user'] . '\'');
+                    $user = mysqli_fetch_assoc($query);
+                    echo "
+                    <div class=\"container\">
+                        <span class=\"Raleway-text\">Логин: " . $user['login'] . "</span>
+                    </div>    
+                    ";
                 }
             ?>
         </div>
