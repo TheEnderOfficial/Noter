@@ -14,17 +14,15 @@
         
         <div align="center" class="content">
             <div align="center">
-                <span class="heading">Ваши заметки</span>
+                <span class="heading">Регистрация</span>
             </div>
-            <div class="note container">
-                <span class="note-header">
-                    asf
-                </span>
-                <br>
-                <span class="note-description">
-                    asf
-                </span>
-            </div>
+            <form class="container form-register" handler="registerHandler.php">
+                <input type="text" name="login" placeholder="Логин">
+                <br>    
+                <input type="password" name="password" placeholder="Пароль">    
+                <br><br>
+                <button type="sumbit" class="green-button">Регистрация</button>
+            </form>
         </div>
         <footer class="footer">
             <nobr>

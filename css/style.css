@@ -78,9 +78,7 @@ header {
 }
 
 .note {
-  background-color: #30303a;
   width: 48%;
-  border-radius: 10px;
 }
 .note-header {
   font-family: Raleway;
@@ -95,4 +93,14 @@ header {
   color: white;
   text-decoration: none;
   text-align: left;
+}
+.container {
+  background-color: #30303a;
+  border-radius: 10px;
+}
+.form-register {
+  width: 48%;
+}
+.Raleway-text {
+  font-family: Raleway;
 }
