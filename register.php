@@ -2,6 +2,16 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script>
+            let btn = document.querySelector("button");
+
+            btn.addEventListener("click", active);
+
+            function active() {
+            btn.classList.toggle("is_active");
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -17,11 +27,11 @@
                 <span class="heading">Регистрация</span>
             </div>
             <form class="container form-register" handler="registerHandler.php">
-                <input type="text" name="login" placeholder="Логин">
-                <br>    
-                <input type="password" name="password" placeholder="Пароль">    
-                <br><br>
-                <button type="sumbit" class="green-button">Регистрация</button>
+            <input type="text" class="form__input" id="login" placeholder="Логин" required="" />
+            <label for="login" class="form__label">Логин</label> 
+            <input type="password" class="form__input" id="password" placeholder="Пароль" required="" />
+            <label for="password" class="form__label">Логин</label>
+            <button type="sumbit" class="custom-button-1">Регистрация</button>
             </form>
         </div>
         <footer class="footer">
