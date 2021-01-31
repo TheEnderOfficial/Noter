@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+
+html {
+  background-color: #1c1c1c;
+}
+
+.heading {
+  font-family: Raleway;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+
+.nav-link {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 400;
+
+  float: right;
+
+  max-height: 78px;
+  padding-top: 0;
+  padding-right: 20px;
+
+  transition: transform 0.2s ease-in-out;
+  transform-origin: 0 0 0;
+  vertical-align: middle;
+  text-decoration: none;
+
+  color: white;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+header {
+  width: 100%;
+}
+.footer-left {
+  display: flex;
+  float: left;
+  padding-top: 12px;
+  padding-bottom: 5px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-image {
+  width: 32px;
+  height: 32px;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+}
+
+.note {
+  background-color: #30303a;
+  width: 48%;
+  border-radius: 10px;
+}
+.note-header {
+  font-family: Raleway;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+.note-description {
+  font-family: Raleway;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
