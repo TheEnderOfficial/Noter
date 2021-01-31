@@ -26,7 +26,7 @@
             <div align="center">
                 <span class="heading">Регистрация</span>
             </div>
-            <form class="container form-register" action="regHandler.php" method="post">
+            <form class="container form-register" action="regHandler.php" method="get">
             <input type="text" class="form__input" name="login" id="login" placeholder="Логин" required="" />
             <label for="login" class="form__label">Логин</label> 
             <input type="password" class="form__input" name="password" id="password" placeholder="Пароль" required="" />
